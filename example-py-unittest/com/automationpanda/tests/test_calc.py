@@ -26,7 +26,8 @@ class CalculatorTest(unittest.TestCase):
         self.assertEqual(value, 0.0, FAILURE)
 
     def test_add(self):
-        value = self.calc.add(NUMBER_1, NUMBER_2)
+        print("In ADD")
+	value = self.calc.add(NUMBER_1, NUMBER_2)
         self.assertEqual(value, 5.0, FAILURE)
         self.assertEqual(value, self.calc.last_answer, FAILURE)
 
